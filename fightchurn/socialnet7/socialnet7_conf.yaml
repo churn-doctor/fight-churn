@@ -1,0 +1,75 @@
+force: false
+dev: false
+n_parallel: 6
+random_seed: null
+init_customers: 10000
+growth_rate: 0.1
+acausal_churn: 0.0
+satisfy_scale: 1.5
+satisfy_base: 2.0
+min_age: 12
+max_age: 82
+age_satisfy: 0.5
+discount_prob: 0.0
+min_discount: 0.05
+max_discount: 0.5
+discount_satisfy: 1.0
+weekday_scale: -0.2
+weekend_scale: 0.2
+behave_exp_base: 1.6
+util_contrib_scale: 2.0
+model: socialnet7
+start_date: '2020-01-01'
+end_date: '2020-06-01'
+utility:
+  post: 1
+  newfriend: 6
+  like: 0.5
+  adview: -1.5
+  dislike: -1
+  unfriend: -10
+  message: 1
+  reply: 1
+  mrr: 0
+transition:
+  churn:
+    scale: 0.135
+    offset: 0.5
+  upsell:
+    scale: 0.0
+    offset: 0.0
+  downsell:
+    scale: 0.0
+    offset: 0.0
+population:
+  web: 0.15
+  appstore1: 0.3
+  appstore2: 0.55
+country:
+  AU: 0.04
+  AR: 0.03
+  BR: 0.05
+  CA: 0.04
+  CH: 0.01
+  CN: 0.15
+  CO: 0.02
+  DE: 0.04
+  DK: 0.01
+  ES: 0.01
+  FR: 0.03
+  GB: 0.04
+  GR: 0.01
+  ID: 0.01
+  IN: 0.04
+  IT: 0.01
+  JP: 0.05
+  KR: 0.03
+  MX: 0.04
+  NL: 0.01
+  'NO': 0.01
+  PT: 0.01
+  RU: 0.02
+  SE: 0.01
+  US: 0.15
+  NZ: 0.02
+  None: 0.11
