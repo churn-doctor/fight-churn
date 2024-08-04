@@ -25,8 +25,8 @@ Arguments
 parser = argparse.ArgumentParser()
 # Run control arguments
 parser.add_argument("--schema", type=str, help="The name of the schema", default='socialnet7')
-parser.add_argument("--chapter", type=int, help="The chapter of the listing", default=4)
-parser.add_argument("--listing", nargs='*', type=int, help="The number of the listing", default=[9])
+parser.add_argument("--chapter", type=int, help="The chapter of the listing", default=6)
+parser.add_argument("--listing", nargs='*', type=int, help="The number of the listing", default=[5])
 parser.add_argument("--insert", action="store_true", default=False,help="Use the insert version of a metric SQL, if available")
 parser.add_argument("--version", nargs='*', help="Alternative listing _parameter_ verions (optional)",default=[])
 parser.add_argument("--n_parallel", type=int, help="Number of parallel cpus for multi-version listings", default=1)
